@@ -1,6 +1,6 @@
-# 💻 Zip code Finder
+# 💻 Mountain landing page
 
-<p align="center">This project is a zip code finder...</p>
+<p align="center">This project is a mountain landing page...</p>
 
 <br/>
 
