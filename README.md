@@ -1,4 +1,4 @@
-# 💻 Mountain landing page
+# 💻 Mountains landing page
 
 <p align="center">This project is a mountain landing page...</p>
 
