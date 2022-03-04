@@ -1,0 +1,30 @@
+.footer1 {
+    padding: 60px;
+    background-color: dodgerblue;
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.footer1 .text {
+    text-align: center;
+    width: 33.3%;
+    color: white;
+}
+
+.footer1 h1 {
+    margin: 10px 0;
+    font-size: 1.4rem;
+}
+
+.footer p {
+    font-size: 1.1rem;
+}
+
+.footer2 {
+    padding: 20px;
+    background-color: rgb(17, 79, 141);
+    color: white;
+    font-size: 1.05rem;
+    text-align: center;
+}

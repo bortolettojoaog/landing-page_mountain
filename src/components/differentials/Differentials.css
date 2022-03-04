@@ -1,0 +1,33 @@
+.differentials {
+    border-top: 3px solid dodgerblue;
+}
+
+.differentials-container {
+    width: 100%;
+    max-width: 1460px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 70px 2%;
+    flex-wrap: wrap;
+}
+
+.differentials-box {
+    margin: 20px;
+    border: 1px solid #ccc;
+    width: calc(33.3% - 40px);
+}
+
+@media screen and (max-width: 1024px) {
+    .differentials-box {
+        width: calc(50% - 40px);
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .differentials-box {
+        width: 100%;
+    }
+}
