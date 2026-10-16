@@ -21,10 +21,37 @@
     font-size: 1.1rem;
 }
 
+.footer1 a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer1 a:hover {
+    text-decoration: underline;
+}
+
+.social-content {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-size: 1.8rem;
+    margin-top: 10px;
+}
+
+.social-content a:hover {
+    text-decoration: none;
+    opacity: 0.8;
+}
+
 .footer2 {
     padding: 20px;
     background-color: rgb(17, 79, 141);
     color: white;
     font-size: 1.05rem;
     text-align: center;
+}
+
+.footer2 a {
+    color: white;
+    font-weight: bold;
 }
