@@ -4,23 +4,35 @@ import './Header.css';
 
 import Button from '../button/Button';
 
+const scrollToId = (id) => () => {
+    document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
+};
+
 const Header = () => {
     return (
             <>
-                <div className="header-container">
+                <a
+                    href="https://github.com/bortolettojoaog/landing-page_mountain"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="template-badge"
+                >
+                    Template Demo &bull; View Source
+                </a>
+
+                <div className="header-container" id="inicio">
                     <div className="overlay"></div>
 
                     <div className="header-center">
                         <div className="header-logo">
-                            <a href=""><img src="/images/logo.png" alt="" title="" /></a>
+                            <a href="#inicio"><img src="/images/logo.png" alt="Mountain" title="Mountain" /></a>
                         </div>
 
                         <nav className="header-navbar">
                             <ul>
-                                <li><a href="">Home</a></li>
-                                <li><a href="">Contact</a></li>
-                                <li><a href="">About</a></li>
-                                <li><a href="">News</a></li>
+                                <li><a href="#inicio">Início</a></li>
+                                <li><a href="#diferenciais">Diferenciais</a></li>
+                                <li><a href="#contato">Contato</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -29,10 +41,10 @@ const Header = () => {
                 <div className="body-container">
                     <div className="body-center">
                         <div className="body-text">
-                            <h2>Explore 15k</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque nobis harum fugit tenetur esse dolore, voluptates possimus ratione, quisquam odio magnam minima perferendis quo necessitatibus quasi dolorum suscipit. Totam, quaerat! Qui culpa reiciendis totam iste obcaecati omnis cumque ad odit earum, at quaerat minus sequi distinctio ea neque similique tempore?</p>
+                            <h2>Explore as Montanhas</h2>
+                            <p>Expedições guiadas para quem busca trilhas de alta montanha, paisagens intactas e uma equipe que conhece cada rota palmo a palmo. Planejamos cada etapa da sua jornada, da logística ao topo.</p>
                             <div className="body-button">
-                                <Button>View Tours</Button>
+                                <Button onClick={ scrollToId('diferenciais') }>Ver Expedições</Button>
                             </div>
                         </div>
                     </div>
