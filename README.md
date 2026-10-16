@@ -1,101 +1,141 @@
-# 💻 Mountains landing page
+# 🏔️ Mountain Landing Page Template
 
-<p align="center">This project is a mountain landing page...</p>
+> A responsive mountain-expedition landing page built with React, ready to be used as a starting point for new sites
 
-<br/>
+![Project Banner](./public/images/background.png)
 
-# 📓 Contents:
+## 📋 Table of Contents
 
-- About
-    - [Features](#Features)
-- Contents,
-- How to use
-    - [Prerequisites](#Prerequisites)
-    - [Running the project](#Running-the-project)
-- Tests,
-- Technologies,
-- Icons.
+-   [About the Project](#-about-the-project)
+-   [Features](#-features)
+-   [Technologies Used](#-technologies-used)
+-   [Prerequisites](#-prerequisites)
+-   [Installation and Setup](#-installation-and-setup)
+-   [Running with Docker](#-running-with-docker)
+-   [Project Structure](#-project-structure)
+-   [Tests](#-tests)
+-   [Contributing](#-contributing)
+-   [License](#-license)
 
-<br/>
+## 🎯 About the Project
 
-# About:
+**Mountain** is a one-page React landing page built by BortolettoTech as a template for mountain-expedition and outdoor-tourism businesses. It ships with a hero section, a features/differentials grid and a contact footer, so it can be restyled and dropped into a new project quickly.
 
-### Features:
+### Why use this template?
 
-- [x] Create Title
-- [x] Create Project
-- [x] Create Description
-- [x] Performed Tests
+-   ✅ **Component-based**: small, reusable React components (Header, Differentials, Footer, Button)
+-   ✅ **Responsive**: adapts from desktop down to mobile
+-   ✅ **Ready-made sections**: hero banner, feature cards and a contact footer with social links
+-   ✅ **Easy to theme**: colors, fonts and spacing centralized per component stylesheet
+-   ✅ **Containerized**: ships with a Docker image for instant deployment
 
-<br/>
+## 🚀 Features
 
-# 📝 How to use:
+-   **Hero banner** with a full-screen background image and a call-to-action button
+-   **Sticky navigation** linking to each section with smooth scrolling
+-   **Feature cards** (`Differentials`) rendered from a single data array — add or remove cards by editing one list
+-   **Contact footer** with quick links and social icons (GitHub, LinkedIn)
+-   **Template badge** linking back to this repository's source
 
-<br/>
+## 🛠 Technologies Used
 
-### Prerequisites:
+-   **React 17** - UI library
+-   **Create React App** - build tooling
+-   **React Icons** - icon set
+-   **CSS3** - styling and responsive layout
+-   **Google Fonts** - typography (Lato)
+-   **Docker & Nginx** - containerized static hosting
 
-You need to have the following tools installed on your machine: [Git](https://git-scm.com), [Node](https://nodejs.org/en/) and [VSCode](https://code.visualstudio.com/)
+## 📋 Prerequisites
 
-<br/>
+To run the project locally, you need one of:
 
-### Running the project:
+-   **Node.js** ([Download](https://nodejs.org/en/)) and **npm** to run it with the dev server
+-   **Docker** ([Download](https://docs.docker.com/get-docker/)) to run it containerized
+
+## 🚀 Installation and Setup
+
+### 1. Clone the Repository
 
 ```bash
-# Clone this repository
-$ git clone <https://github.com/bortolettojoaog/landing-page_mountain.git>
-
-# Access the project folder through terminal/cmd
-$ cd landing-page_mountain
-
-# Install node
-$ <https://nodejs.org/en/>
-
-# Open visual studio code terminal using `CTRL + J`
-
-# Install all dependencies
-$ npm install
-
-# Turn on the server
-$ npm start
+git clone https://github.com/bortolettojoaog/landing-page_mountain.git
+cd landing-page_mountain
 ```
 
-<br/>
+### 2. Install Dependencies
 
-# ✔️ Tests:
+```bash
+npm install
+```
+
+### 3. Run the Application
+
+```bash
+npm start
+```
+
+The application will be available at: `http://localhost:3000`
+
+## 🐳 Running with Docker
+
+### 1. Build the Image
+
+```bash
+docker build -t landing-page-mountain .
+```
+
+### 2. Run the Container
+
+```bash
+docker run -d -p 8080:80 --name landing-page-mountain landing-page-mountain
+```
+
+The application will be available at: `http://localhost:8080`
+
+## 📁 Project Structure
+
+```
+src/
+├── App.jsx                        # Page composition and differentials data
+├── components/
+│   ├── header/                    # Hero section, navigation and template badge
+│   ├── differentials/             # Feature cards grid
+│   ├── differential/              # Single feature card
+│   ├── footer/                    # Contact footer and social links
+│   └── button/                    # Shared button component
+└── index.js
+public/
+├── images/                        # Hero background and logo
+├── favicon.svg
+└── manifest.json
+nginx/
+└── default.conf                   # Nginx config used by the Docker image
+```
+
+## ✔️ Tests
+
 <h1 align="center">
     <img alt="Test" title="Test" src="./github/tests.gif" />
 </h1>
 
-<br/>
+## 🤝 Contributing
 
-# 🛠️ Technologies:
+Contributions are welcome! To contribute:
 
-The following tools were used in building the project:
+1. Fork the project
+2. Create a branch for your feature (`git checkout -b feature/new-feature`)
+3. Commit your changes (`git commit -m 'Add new feature'`)
+4. Push to the branch (`git push origin feature/new-feature`)
+5. Open a Pull Request
 
-- [JavaScript](https://www.javascript.com/)
-- [HTML](https://pt.wikipedia.org/wiki/HTML)
-- [CSS](https://pt.wikipedia.org/wiki/Cascading_Style_Sheets)
-- [React](https://reactjs.org/)
-- [Node](https://nodejs.org/en/)
+## 📄 License
 
-<br/>
-
-# 📁 Icons:
-
-- :package: new functionality
-- :up: update
-- :bug: bug fix
-- :checkered_flag: release
-
-<br/>
+This project is under the MIT license. See the [LICENSE](LICENSE) file for more details.
 
 ---
 
-<p align="center">
-    Made with ❤️ by João Guilherme Bortoletto 👋
-</p>
-
-<p align="center">
-    <a href="https://www.linkedin.com/in/bortolettojoaog/">See my LinkedIn</a>
-</a>
+<div align="center">
+  <p>Made with ❤️ by <strong>João Guilherme Bortoletto</strong></p>
+  <p><a href="https://www.linkedin.com/in/bortolettojoaog/">See my LinkedIn</a></p>
+  <p>⭐ If this project was helpful, consider giving it a star!</p>
+</div>
