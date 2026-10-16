@@ -13,6 +13,8 @@
 }
 
 .differentials-box {
+    display: flex;
+    flex-direction: column;
     margin: 20px;
     border: 1px solid #ccc;
     width: calc(33.3% - 40px);
