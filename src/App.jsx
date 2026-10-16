@@ -9,24 +9,24 @@ import Footer from './components/footer/Footer';
 import Differentials from './components/differentials/Differentials';
 
 const App = () => {
-    const [differentials, setDifferentials] = useState([
+    const [differentials] = useState([
         {
             id: '1',
             h1: <CgBulb />,
-            h2: 'Differential #1',
-            p: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut quae esse laboriosam hic tempora qui.',
+            h2: 'Guias Especializados',
+            p: 'Nossa equipe é formada por montanhistas certificados, com anos de experiência nas rotas que você vai percorrer — da logística ao resgate.',
         },
         {
             id: '2',
             h1: <CgData />,
-            h2: 'Differential #2',
-            p: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut quae esse laboriosam hic tempora qui.',
+            h2: 'Rotas Monitoradas',
+            p: 'Condições climáticas, nível de dificuldade e status de cada trilha são acompanhados em tempo real para manter sua expedição segura.',
         },
         {
             id: '3',
             h1: <CgCoffee />,
-            h2: 'Differential #3',
-            p: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut quae esse laboriosam hic tempora qui.',
+            h2: 'Suporte Completo',
+            p: 'Hospedagem, equipamentos e refeições incluídos em cada pacote, para você focar só em chegar ao topo.',
         },
     ]);
 

@@ -5,13 +5,15 @@ import './Differentials.css';
 import Differential from '../differential/Differential';
 import Button from '../button/Button';
 
-const Differentials = ({ differentials, icons }) => {
-    console.log(icons);
+const scrollToContato = () => {
+    document.getElementById('contato')?.scrollIntoView({ behavior: 'smooth' });
+};
 
+const Differentials = ({ differentials }) => {
     return (
-        <div className="differentials">
+        <div className="differentials" id="diferenciais">
             <div className="differentials-container">
-                { 
+                {
                     differentials.map((diff) => (
                         <div key={ diff.id } className="differentials-box">
                             <Differential>
@@ -19,9 +21,9 @@ const Differentials = ({ differentials, icons }) => {
                                 <h2>{ diff.h2 }</h2>
                                 <p>{ diff.p }</p>
                             </Differential>
-                            <Button style={{ borderLeft: '1px solid #ccc' }}>Saiba Mais</Button>
+                            <Button style={{ borderLeft: '1px solid #ccc' }} onClick={ scrollToContato }>Saiba Mais</Button>
                         </div>
-                    )) 
+                    ))
                 }
             </div>
         </div>
